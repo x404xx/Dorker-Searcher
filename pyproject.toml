@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "dorker"
+version = "0.1.0"
+description = ""
+authors = ["x404xx <ghost.py@outlook.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+requests = "^2.31.0"
+beautifulsoup4 = "^4.12.3"
+user-agent = "^0.1.10"
+rich = "^13.7.1"
+pysocks = "^1.7.1"
+lxml = "^5.2.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

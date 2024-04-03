@@ -1,49 +1,79 @@
 <div align="center">
 
-# Dorkish <img src="https://korben.info/app/uploads/2019/06/googledork.jpg" width="50px">
+<img src="assets/logo.png" width="200" height="auto">
 
-**Dorks Searcher** advanced Google queries, also known as Google Dorks, with the added advantage of concurrent searching with auto proxy rotator.
+**Dorks Searcher** is an advanced tool for performing Google queries, also known as Google Dorks, with the added advantage of concurrent searching while equipped with an automatic proxy rotator.
 
-<img src="https://1.bp.blogspot.com/-H0LJDWx6w7k/Uz5pUSj3TPI/AAAAAAAAAPI/w-I-i5LwLvM/s1600/OnionBD-Google.dork.gif" width="600" height="auto">
+<img src="assets/runner.gif" width="500" height="auto">
 
 </div>
 
-## **Usage**
+## **Dork Collections**
 
-To use _**Dorkish**_, open your terminal and navigate to the folder that contains _**Dorkish**_ content ::
+-   [13774 Dorks](dorks_collection/dorks.txt)
 
-```sh
+## **Installation**
+
+**Using** `poetry`
+
+```
+git clone https://github.com/x404xx/Dorker-Searcher.git
+cd Dorker-Searcher
+poetry shell
+poetry install
+```
+
+**Using** `pip`
+
+```
+git clone https://github.com/x404xx/Dorker-Searcher.git
+cd Dorker-Searcher
+virtualenv env
+env/scripts/activate
 pip install -r requirements.txt
 ```
 
-Running _**Dorkish**_ with command-line - info ::
+## **Usage**
 
-```sh
-python main.py --d YOUR_DORK --w WORKER/THREADS --a URL_AMOUNT
+```
+usage: main.py [-h] [-d DORK] [-w WORKER] [-a AMOUNT] [-i] [-f FILE]
+
+Scrape URLs using Dork
+
+options:
+  -h, --help            show this help message and exit
+  -d DORK, --dork DORK  Dorks
+  -w WORKER, --worker WORKER
+                        How many worker
+  -a AMOUNT, --amount AMOUNT
+                        How many URLs to be scrape
+  -i, --info            Status info
+  -f FILE, --file FILE  Output filename (Without Ext)
 ```
 
-Running _**Dorkish**_ with full command-line + info ::
+## **Usage Example**
 
-```sh
-python main.py --d YOUR_DORK --w WORKER/THREADS --a URL_AMOUNT --i --s --f OUTPUT_FILENAME
+Running _**Dorker**_ with command-line - info ::
+
+```python
+python main.py -d YOUR_DORK -w WORKER/THREADS -a URL_AMOUNT
 ```
 
-Alternatively, you can run _**Dorkish**_ without command-line. The program will handle anything for you ::
+Running _**Dorker**_ with full command-line + info + filename::
 
-```sh
+```python
+python main.py -d YOUR_DORK -w WORKER/THREADS -a URL_AMOUNT -i -f OUTPUT_FILENAME(Without Extension)
+```
+
+Alternatively, you can run _**Dorker**_ without command-line. The program will handle anything for you ::
+
+```python
 python main.py
 ```
 
-## **Example Output**
+## **Example JSON File**
 
-- Example output without info :
-![Screenshot (20230620-082207)](https://github.com/x404xx/Dorkish-Searcher/assets/114883816/273977bd-31bc-4b9a-8339-fad619404707)
-
-- Example output with info :
-![Screenshot (20230620-081910)](https://github.com/x404xx/Dorkish-Searcher/assets/114883816/2425ba42-2686-4b22-b91c-aeb1e93e5356)
-
-- Example json file :
-![Screenshot (20230620-081949)](https://github.com/x404xx/Dorkish-Searcher/assets/114883816/e07c2dca-a9f6-45e0-a533-d1dcb9de7612)
+![](assets/result.png)
 
 ## **Legal Disclaimer**
 
