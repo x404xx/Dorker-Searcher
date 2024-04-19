@@ -110,7 +110,7 @@ class DorkSearch(ProxyChecker):
         while len(working_proxy) < amount:
             console.clear()
             self.print_color_list(color_list)
-            self.print_not_enough_proxies(amount, working_proxy)
+            self.print_not_enough_proxies()
             proxy_limit = self.get_proxy_limit()
             color_list = self._color_template(dork, amount, worker, proxy_limit, info)
             self.print_current_live_proxy(amount, working_proxy)
